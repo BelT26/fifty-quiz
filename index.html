@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big 50 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div id='quiz-container'>
+        <h1>The Big 50 Quiz</h1>
+        <h2><span id='round'></span><span id='decade'></span></h2>
+        <p id='question'></p>
+        <div id='answer-container'>
+            <button id='A' class='answer-btn'></button>
+            <button id='B' class='answer-btn'></button>
+            <button id='C' class='answer-btn'></button>
+            <button id='D' class='answer-btn'></button>
+        </div>
+        <h2 id='score'></h2>
+    </div>
+    <div id='final-score-container' class='hide'>
+        <h1>Game Over!</h1>
+        <h2>Your Final Score</h2>
+        <h2 id='final-score'></h2>
+
+    </div>
+    <div id = 'correct-container' class='hide'>
+        <div id="correct">
+            <h1>Correct!</h1>
+            <button id="correct-btn" class='answer-btn'>Next Question</button>
+        </div>
+    </div>
+    <div id="incorrect-container" class='hide'>
+        <div id="incorrect">
+            <h1>Wrong!</h1>
+            <button id="incorrect-btn" class='answer-btn'>Next Question</button>
+        </div>
+    </div>
+
+<script src='quiz.js'></script>   
+</body>
+</html>

@@ -1,0 +1,76 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(./assets/220px-ZiggyStardust.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+#quiz-container {
+    width: 80%;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.answer-btn {
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    margin: 20px auto;
+    text-align: center;
+    width: 60%;
+    padding: 5px;
+    font-size: large;
+}
+
+#correct-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#correct {
+    width: 50%;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    margin: 150px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+#incorrect, #final-score-container {
+    width: 50%;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    margin: 150px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
