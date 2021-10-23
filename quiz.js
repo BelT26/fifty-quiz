@@ -23,7 +23,7 @@ let score = 0;
 const questionList = [
     {round: 1,
       decade: '1971-1980',
-      background: 'ziggy.jpg',
+      background: 'hunky.jpg',
      qs: [
         {year: '1971',
         qtext: 'Who failed to win a trophy in 1971?',
@@ -118,7 +118,7 @@ const questionList = [
      ]},
      {round: 2,
       decade: '1981-1990',
-      background: 'smiths.png',
+      background: 'stone-roses.jpg',
      qs: [
         {year: '1981',
         qtext: 'In 1981 which two British athletes broke the world record for the mile three times in ten days?',
@@ -212,7 +212,7 @@ const questionList = [
         },
      ]},
      {round: 3,
-      background: 'stone-roses.jpg',
+      background: 'nirvana.jpg',
       decade: '1991-2000',
      qs: [
         {year: '1991',        
@@ -307,7 +307,7 @@ const questionList = [
         },
      ]},
      {round: 4,
-      background: 'killers.png',
+      background: 'killers1.jpg',
      decade: '2001-2010', 
      qs: [
         {year: '2001',
@@ -403,7 +403,7 @@ const questionList = [
      ]},
      {round: 5,
         decade: '2011-2020',
-      background: 'adele.jpg',
+      background: 'lana.jpg',
      qs: [
         {year: '2011',
         qtext: 'Which former Thin Lizzy guitarist died in February 2011?',
@@ -495,7 +495,9 @@ const questionList = [
         answerD: 'My Twitter has become so powerful that I can actually make my enemies tell the truth',
         correct: 'A'
         },
-     ]}, 
+             ]}, 
+      {round: 6,
+      background: 'retro.jpg'}
 ]
 
 let currentRound = questionList[roundIndex];
@@ -550,6 +552,7 @@ function nextQuestion() {
          currentQuestion = questionList[roundIndex].qs[qIndex];
       } else {
          quizContainer.classList.add('hide');
+         roundIndex += 1;
          finalScore.innerText = `${score} points`;
          finalScoreContainer.classList.remove('hide');
          finalScoreContainer.classList.add('show');
